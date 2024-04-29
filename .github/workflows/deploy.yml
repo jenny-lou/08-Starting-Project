@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
-      MONGODB_CLUSTER_ADDRESS: ${{ env.MONGODB_CLUSTER_ADDRESS }}
-      MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}
+      MONGODB_CLUSTER_ADDRESS: ${{ vars.MONGODB_CLUSTER_ADDRESS }}
+      MONGODB_USERNAME: ${{ vars.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     steps:
